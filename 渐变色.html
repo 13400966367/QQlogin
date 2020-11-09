@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ</title>
+    <style type="text/css">
+    #colorchange{
+        width: 430px;
+        height: 120px;
+        background-image: linear-gradient(125deg,#E4FFCD,#6828ff,#00e1ff,#E4FFCD);
+        background-size: 400%;
+        animation: bganimation 15s infinite;
+    }
+    @keyframes bganimation{
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+    #main{
+        width: 430px;
+        height: 180px;
+        /* background-color: brown; */
+        /* padding: 20px; */
+        padding: 30px 0px 0px 0px;
+    }
+    #login{
+        width: 260px;
+        height: 145px;
+        /* position: relative; */
+        margin-left: 85px;
+        /* background-color: blue; */
+    }
+    #block1{
+        width: 70px;
+        height: 30px;
+        /* background-color: cornsilk; */
+        line-height: 30px;
+        color: darkgrey;
+        float: left;
+        cursor:pointer;
+        margin-left: 10px;
+    }
+    #block2{
+        width: 32px;
+        height: 35px;
+        /* background-color: darkorchid; */
+        float: right;
+        margin-right: 8px;
+        /* padding: ; */
+    }
+    .ipt{
+        /* font-size: 30px; */
+        width: 260px;
+        float: right;
+        padding: 10px 0px;
+        font-family: "Microsoft soft";
+        border: none;
+        border-bottom: 1px solid rgb(196, 196, 196);
+        text-indent: 23px;
+        font-size: 20px;
+    }
+    .fuxuan{
+        /* float: left; */
+        margin: 6px 0px;
+    }
+    input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+    }
+    .QQcount{
+        background: url(2.png) no-repeat 0 center;
+    }
+    .QQpsd{
+        background: url(3.png) no-repeat 0 center;
+    }
+    .subbtn{
+        color: white;
+        width: 260px;
+        padding: 8px 80px;
+        background-color: rgb(0, 191, 255);
+        border: none;
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+    </style>
+    <script type="text/javascript">
+    </script>
+</head>
+<body style="background-color: blanchedalmond;">
+    <div style="background-color: white;width: 430px;">
+        <div id="colorchange"></div>
+        <div id="main">
+            <div id="login">
+                <form>
+                <!-- <img src="1.png"> -->
+                <input id="Qcount" class="ipt QQcount" placeholder="QQ号码/手机/邮箱" onfocus="changeimg1()">
+                <input id="Qpsd" class="ipt QQpsd" placeholder="密码" onfocus="changeimg2()">
+                    <input type="checkbox" class="fuxuan" id="1"/>
+                    <label for="1" style="font-size: 90%;color: gray;margin-right:20px ;">自动登录</label>
+                    <input type="checkbox" class="fuxuan" id="2"/>
+                    <label for="2" style="font-size: 90%;color: gray;margin-right: 20px;">记住密码</label>
+                    <label style="font-size: 90%;color: gray;cursor: pointer;">找回密码</label>
+                    <input type="submit" class="subbtn" value="安全登录">
+                </form>    
+            </div>
+            <div id="block1">注册帐号</div>
+            <div id="block2"><img src="5.png"></div>
+        </div>
+    </div>
+</body>
+</html>
